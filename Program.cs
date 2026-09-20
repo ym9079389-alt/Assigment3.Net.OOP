@@ -32,6 +32,12 @@
             // Interface: Multiple Inheritance, Decoupling & Testing.
             #endregion
 
+            #region c
+            //c)  Can a class inherit from multiple abstract classes? Can it implement multiple interfaces?
+            //No, 
+            //Yes.
+            #endregion
+
             #endregion
         }
     }
