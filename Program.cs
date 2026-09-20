@@ -18,6 +18,16 @@
             #endregion
 
             #endregion
+
+            #region Q2
+
+            #region a
+
+            #endregion
+            //a)  What is the difference between an Abstract Class and an Interface ?
+            //Interface: cannot use constractor.
+            //Abstract: can use constractor and implementation the proparety in abstract.
+            #endregion
         }
     }
 }
