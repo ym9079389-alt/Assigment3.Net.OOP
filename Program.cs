@@ -91,40 +91,17 @@
             DeliveryReport report03 = new DeliveryReport();
             report03.PrintShipment(intern);
 
-            Console.Write("Enter a Tracking Code to search: ");
-            string searchCode = Console.ReadLine();
-
-            Shipment foundShipment = center[searchCode];
-
-            if (foundShipment != null)
-            {
-                Console.WriteLine("Shipment Found");
-                foundShipment.PrintShipment();
-            }
-            else
-            {
-                Console.WriteLine("\nShipment not found.");
-            }
-
-
-            Console.WriteLine("Enter a Tracking Code to Remove: ");
-            string removeCode = Console.ReadLine();
-            center.RemoveShipment(removeCode);
-
-            center.PrintAllShipments();
-
-
 
             ITrackable[] trackables = { standard, express, intern };
             for(int i = 0; i < 3; i++)
             {
-                trackables[i].GetTrackingStatus();
+                Console.WriteLine(trackables[i].GetTrackingStatus());
             }
 
             IInsurable[] insurables = { standard, express, intern };
             for (int i = 0; i < 3; i++)
             {
-                insurables[i].CalculateInsurance();
+                Console.WriteLine(insurables[i].CalculateInsurance());
             }
 
 
